@@ -1,0 +1,284 @@
+.footer {
+    background: #333A44;
+    top: 0;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+    }
+
+    &__img {
+        display: inline-block;
+        transition: 40ms ease;
+
+        &:active {
+            transition: 40ms ease;
+            opacity: 0.1;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        transform: translateX(-250px);
+    }
+
+    &__links {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 'Space Mono';
+        color: #939CAA;
+        transition: 40ms ease;
+
+        &:hover {
+            transition: 40ms ease;
+            color: #FCB72B;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 22px;
+        color: #E5ECF4;
+        font-size: 25px;
+    }
+
+    .fa-facebook-square:hover {
+        color: #FCB72B;
+        cursor: pointer;
+    }
+
+    .fa-twitter:hover {
+        color: #FCB72B;
+        cursor: pointer;
+    }
+
+    .fa-instagram:hover {
+        color: #FCB72B;
+        cursor: pointer;
+    }
+}
+
+// Responsive for Tablet
+@media only screen and(max-width:768px) {
+    .footer {
+        background: #333A44;
+        top: 0;
+        width: 100%;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 35px;
+        }
+
+        &__img {
+            display: inline-block;
+            transition: 40ms ease;
+
+            &:active {
+                transition: 40ms ease;
+                opacity: 0.1;
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            transform: translateX(-50px);
+        }
+
+        &__links {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            color: #939CAA;
+            transition: 40ms ease;
+
+            &:hover {
+                transition: 40ms ease;
+                color: #FCB72B;
+            }
+        }
+
+        &__icons {
+            display: flex;
+            gap: 22px;
+            color: #E5ECF4;
+            font-size: 25px;
+        }
+
+        .fa-facebook-square:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+
+        .fa-twitter:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+
+        .fa-instagram:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+    }
+}
+
+// Responsive for IPhone XR
+@media only screen and(max-width:414px) {
+    .footer {
+        background: #333A44;
+
+        &__container {
+            margin-top: 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &__img {
+            display: inline-block;
+            transition: 40ms ease;
+
+            &:active {
+                transition: 40ms ease;
+                opacity: 0.1;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 41px;
+            transform: translateX(5px);
+        }
+
+        &__links {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            color: #939CAA;
+            transition: 40ms ease;
+
+            &:hover {
+                transition: 40ms ease;
+                color: #FCB72B;
+            }
+        }
+
+        &__icons {
+            margin-top: 50px;
+            display: flex;
+            gap: 28px;
+            color: #E5ECF4;
+        }
+
+
+        .fa-facebook-square:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+
+        .fa-twitter:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+
+        .fa-instagram:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+    }
+}
+
+// Responsive for Mobile
+@media only screen and(max-width:375px) {
+    .footer {
+        background: #333A44;
+
+        &__container {
+            margin-top: 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &__img {
+            display: inline-block;
+            transition: 40ms ease;
+
+            &:active {
+                transition: 40ms ease;
+                opacity: 0.1;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 41px;
+            transform: translateX(5px);
+        }
+
+        &__links {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            color: #939CAA;
+            transition: 40ms ease;
+
+            &:hover {
+                transition: 40ms ease;
+                color: #FCB72B;
+            }
+        }
+
+        &__icons {
+            margin-top: 50px;
+            display: flex;
+            gap: 28px;
+            color: #E5ECF4;
+        }
+
+
+        .fa-facebook-square:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+
+        .fa-twitter:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+
+        .fa-instagram:hover {
+            color: #FCB72B;
+            cursor: pointer;
+        }
+    }
+}

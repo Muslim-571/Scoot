@@ -1,0 +1,240 @@
+.navi {
+    overflow-x: hidden;
+    margin-top: 160px;
+
+    &__container {
+        display: flex;
+        gap: 30px;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            top: 40px;
+            right: 252px;
+            position: absolute;
+            z-index: -1;
+            content: "";
+            width: 973px;
+            height: 15px;
+            display: inline-block;
+            background-image: url("../img/path__img.svg");
+        }
+    }
+
+    &__title {
+        margin-top: 40px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'Space Mono';
+        letter-spacing: -1.07143px;
+        color: #495567;
+    }
+
+    &__text {
+        margin-top: 27px;
+        width: 350px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 'Lexend Deca';
+        color: #939CAA;
+    }
+}
+
+// Responsive for Tablet
+@media only screen and(max-width:768px) {
+    .navi {
+        overflow-x: hidden;
+        margin-top: 160px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                top: 133px;
+                right: 375px;
+                position: absolute;
+                z-index: -1;
+                content: "";
+                width: 599px;
+                height: 15px;
+                display: inline-block;
+                background-image: url("../img/path__img.svg");
+                transform: rotate(90deg);
+                display: inline-block;
+            }
+        }
+
+        &__img {
+            margin-left: -140px;
+        }
+
+        &__title {
+            margin-top: -90px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            font-family: 'Space Mono';
+            letter-spacing: -1.07143px;
+            color: #495567;
+        }
+
+        &__text {
+            width: 398px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Lexend Deca';
+            color: #939CAA;
+        }
+    }
+}
+
+// Responsive for Iphone XR
+@media only screen and(max-width:414px) {
+    .navi {
+        overflow-x: hidden;
+        margin-top: 60px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+            &::after {
+                top: 133px;
+                right: 375px;
+                position: absolute;
+                z-index: -1;
+                content: "";
+                width: 599px;
+                height: 15px;
+                display: inline-block;
+                background-image: url("../img/path__img.svg");
+                transform: rotate(90deg);
+                display: none;
+            }
+        }
+
+        &__first {
+            gap: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: -0.892857px;
+            color: #495567;
+        }
+
+        &__text {
+            width: 311px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #939CAA;
+
+        }
+
+        &__img {
+            margin: 90px auto;
+            width: 56px;
+            height: 56px;
+        }
+    }
+}
+
+// Responsoive for Mobile
+@media only screen and(max-width:375px) {
+    .navi {
+        overflow-x: hidden;
+        margin-top: 60px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+            &::after {
+                top: 133px;
+                right: 375px;
+                position: absolute;
+                z-index: -1;
+                content: "";
+                width: 599px;
+                height: 15px;
+                display: inline-block;
+                background-image: url("../img/path__img.svg");
+                transform: rotate(90deg);
+                display: none;
+            }
+        }
+
+        &__first {
+            gap: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: -0.892857px;
+            color: #495567;
+        }
+
+        &__text {
+            width: 311px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #939CAA;
+
+        }
+
+        &__img {
+            margin: 90px auto;
+            width: 56px;
+            height: 56px;
+        }
+    }
+}

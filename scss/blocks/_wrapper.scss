@@ -1,0 +1,419 @@
+.wrapper {
+    overflow-x: hidden;
+    margin-top: 150px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    &__first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    &__title {
+        width: 445px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        font-family: 'Space Mono';
+        letter-spacing: -2.14286px;
+        color: #495567;
+    }
+
+    &__text {
+        width: 445px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 'Lexend Deca';
+        color: #939CAA;
+    }
+
+    &__btn {
+        border: 2px solid #FCB72B;
+        width: 180px;
+        height: 50px;
+        background: #FCB72B;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 'Space Mono';
+        text-align: center;
+        color: #FFFFFF;
+        transition: 40ms ease;
+        cursor: pointer;
+
+        &:active {
+            transition: 40ms ease;
+            background: #FFFFFF;
+            color: #FCB72B;
+            border: 2px solid #FCB72B;
+        }
+    }
+
+    &__images {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 741px;
+            height: 151px;
+            bottom: 0;
+            left: -130px;
+            background-image: url('../img/arrow__img.svg');
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &::before {
+            top: 0;
+            left: 500px;
+            border-radius: 50%;
+            content: "";
+            position: absolute;
+            width: 445px;
+            height: 445px;
+            display: inline-block;
+            background: #E5ECF4;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+}
+
+// Responsive for Tablet
+@media only screen and(max-width:768px) {
+    .wrapper {
+        overflow-x: hidden;
+        margin-top: 150px;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+        }
+
+        &__first {
+            margin-top: 56px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            text-align: center;
+            width: 457px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+            font-family: 'Space Mono';
+            letter-spacing: -2.14286px;
+            color: #495567;
+        }
+
+        &__text {
+            text-align: center;
+            width: 573px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Lexend Deca';
+            color: #939CAA;
+        }
+
+        &__btn {
+            border: 2px solid #FCB72B;
+            width: 180px;
+            height: 50px;
+            background: #FCB72B;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            text-align: center;
+            color: #FFFFFF;
+            transition: 40ms ease;
+            cursor: pointer;
+
+            &:active {
+                transition: 40ms ease;
+                background: #FFFFFF;
+                color: #FCB72B;
+                border: 2px solid #FCB72B;
+            }
+        }
+
+        &__images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 741px;
+                height: 151px;
+                bottom: 0;
+                left: -70px;
+                background-image: url('../img/arrow__img.svg');
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &::before {
+                top: 0;
+                left: 550px;
+                border-radius: 50%;
+                content: "";
+                position: absolute;
+                width: 445px;
+                height: 445px;
+                display: inline-block;
+                background: #E5ECF4;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__img {
+            border-radius: 50%;
+        }
+    }
+}
+
+// Responsive for Iphone XR
+@media only screen and(max-width:414px) {
+    .wrapper {
+        overflow-x: hidden;
+        margin-top: 100px;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+        }
+
+        &__first {
+            margin-top: 56px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            text-align: center;
+            width: 311px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            font-family: 'Space Mono';
+            letter-spacing: -1.42857px;
+            color: #495567;
+        }
+
+        &__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #939CAA;
+            width: 311px;
+        }
+
+        &__btn {
+            border: 2px solid #FCB72B;
+            width: 180px;
+            height: 50px;
+            background: #FCB72B;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            text-align: center;
+            color: #FFFFFF;
+            transition: 40ms ease;
+            cursor: pointer;
+
+            &:active {
+                transition: 40ms ease;
+                background: #FFFFFF;
+                color: #FCB72B;
+                border: 2px solid #FCB72B;
+            }
+        }
+
+        &__images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 741px;
+                height: 151px;
+                bottom: 0;
+                left: -15px;
+                background-image: url('../img/arrow__img.svg');
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &::before {
+                top: 0;
+                left: 564px;
+                border-radius: 50%;
+                content: "";
+                position: absolute;
+                width: 445px;
+                height: 445px;
+                display: none;
+                background: #E5ECF4;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__img {
+            width: 311px;
+            height: 311px;
+            border-radius: 50%;
+        }
+    }
+}
+// Responsive for Mobile
+@media only screen and(max-width:375px) {
+    .wrapper {
+        overflow-x: hidden;
+        margin-top: 100px;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+        }
+
+        &__first {
+            margin-top: 56px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            text-align: center;
+            width: 311px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            font-family: 'Space Mono';
+            letter-spacing: -1.42857px;
+            color: #495567;
+        }
+
+        &__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #939CAA;
+            width: 311px;
+        }
+
+        &__btn {
+            border: 2px solid #FCB72B;
+            width: 180px;
+            height: 50px;
+            background: #FCB72B;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            text-align: center;
+            color: #FFFFFF;
+            transition: 40ms ease;
+            cursor: pointer;
+
+            &:active {
+                transition: 40ms ease;
+                background: #FFFFFF;
+                color: #FCB72B;
+                border: 2px solid #FCB72B;
+            }
+        }
+
+        &__images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 741px;
+                height: 151px;
+                bottom: 0;
+                left: -15px;
+                background-image: url('../img/arrow__img.svg');
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &::before {
+                top: 0;
+                left: 564px;
+                border-radius: 50%;
+                content: "";
+                position: absolute;
+                width: 445px;
+                height: 445px;
+                display: none;
+                background: #E5ECF4;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__img {
+            width: 311px;
+            height: 311px;
+            border-radius: 50%;
+        }
+    }
+}

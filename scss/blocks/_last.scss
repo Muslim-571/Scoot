@@ -1,0 +1,206 @@
+.last {
+    overflow-x: hidden;
+    margin-top: 200px;
+    background: #495567;
+    padding: 120px 0px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            width: 998px;
+            height: 158px;
+            top: 57px;
+            left: 226px;
+            background-image: url('../img/triple__img.svg');
+            display: inline-block;
+        }
+    }
+
+    &__title {
+        width: 415px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        font-family: 'Space Mono';
+        color: #FFFFFF;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+// Responsive for Tablet
+@media only screen and(max-width:768px) {
+    .last {
+        overflow-x: hidden;
+        margin-top: 104px;
+        background: #495567;
+        padding: 120px 0px;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                z-index: 1;
+                content: "";
+                position: absolute;
+                width: 998px;
+                height: 158px;
+                top: 154px;
+                left: -200px;
+                background-image: url('../img/triple__img.svg');
+                display: inline-block;
+            }
+        }
+
+        &__title {
+            text-align: center;
+            width: 457px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            font-family: 'Space Mono';
+            color: #FFFFFF;
+        }
+
+        &__icons {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+        }
+    }
+}
+
+// Responsive for IPhone XR
+@media only screen and(max-width:414px) {
+    .last {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background: #495567;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                z-index: 1;
+                content: "";
+                position: absolute;
+                width: 998px;
+                height: 150px;
+                top: 154px;
+                left: -178px;
+                background-image: url('../img/triple__img.svg');
+                display: inline-block;
+            }
+        }
+
+        &__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 311px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.42857px;
+            font-family: 'Space Mono';
+            color: #FFFFFF;
+        }
+
+        &__icons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &__icon {
+            width: 142px;
+            height: 46px;
+        }
+    }
+}
+
+// Responsive for Mobile
+@media only screen and(max-width:375px) {
+    .last {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background: #495567;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                z-index: 1;
+                content: "";
+                position: absolute;
+                width: 998px;
+                height: 150px;
+                top: 154px;
+                left: -200px;
+                background-image: url('../img/triple__img.svg');
+                display: inline-block;
+            }
+        }
+
+        &__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 311px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.42857px;
+            font-family: 'Space Mono';
+            color: #FFFFFF;
+        }
+
+        &__icons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &__icon {
+            width: 142px;
+            height: 46px;
+        }
+    }
+}

@@ -1,0 +1,291 @@
+.header {
+    background-color: #FFFFFF;
+    top: 0;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &__img {
+        display: inline-block;
+        transition: 40ms ease;
+
+        &:active {
+            transition: 40ms ease;
+            opacity: 0.1;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+    }
+
+    &__links {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 'Space Mono';
+        color: #939CAA;
+        transition: 40ms ease;
+
+        &:hover {
+            transition: 40ms ease;
+            color: #FCB72B;
+        }
+    }
+
+    &__link {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px 40px;
+        background: #FCB72B;
+        transition: 40ms ease;
+        border: 2px solid #FCB72B;
+
+        &:active {
+            transition: 40ms ease;
+            background: #FFFFFF;
+            color: #FCB72B;
+            border: 2px solid #FCB72B;
+        }
+    }
+}
+
+// Responsive for Tablet
+@media only screen and(max-width:768px) {
+    .header {
+        z-index: 1001;
+        position: fixed;
+        background-color: #FFFFFF;
+        top: 0;
+        width: 100%;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 35px;
+        }
+
+        &__img {
+            display: inline-block;
+            transition: 40ms ease;
+
+            &:active {
+                transition: 40ms ease;
+                opacity: 0.1;
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            transform: translateX(-25px);
+        }
+
+        &__links {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            color: #939CAA;
+            transition: 40ms ease;
+
+            &:hover {
+                transition: 40ms ease;
+                color: #FCB72B;
+            }
+        }
+
+        &__link {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 10px 40px;
+            background: #FCB72B;
+            transition: 40ms ease;
+            border: 2px solid #FCB72B;
+
+            &:active {
+                transition: 40ms ease;
+                background: #FFFFFF;
+                color: #FCB72B;
+                border: 2px solid #FCB72B;
+            }
+        }
+    }
+}
+
+// Responsive for Iphone XR
+@media only screen and(max-width:414px) {
+    .header {
+        z-index: 1001;
+        position: fixed;
+        background-color: #FFFFFF;
+        top: 0;
+        width: 100%;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 35px;
+        }
+
+        &__img {
+            display: inline-block;
+            transition: 40ms ease;
+            transform: translateX(110px);
+
+            &:active {
+                transition: 40ms ease;
+                opacity: 0.1;
+            }
+        }
+
+        &__navbar {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            transform: translateX(-25px);
+        }
+
+        &__links {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            color: #939CAA;
+            transition: 40ms ease;
+
+            &:hover {
+                transition: 40ms ease;
+                color: #FCB72B;
+            }
+        }
+
+        &__link {
+            display: none;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 10px 40px;
+            background: #FCB72B;
+            transition: 40ms ease;
+            border: 2px solid #FCB72B;
+
+            &:active {
+                transition: 40ms ease;
+                background: #FFFFFF;
+                color: #FCB72B;
+                border: 2px solid #FCB72B;
+            }
+        }
+    }
+}
+
+// Responsive for Mobile
+@media only screen and(max-width:375px) {
+    .header {
+        z-index: 1001;
+        position: fixed;
+        background-color: #FFFFFF;
+        top: 0;
+        width: 100%;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 35px;
+        }
+
+        &__img {
+            vertical-align: middle;
+            transition: 40ms ease;
+            transform: translateX(90px);
+
+            &:active {
+                transition: 40ms ease;
+                opacity: 0.1;
+            }
+        }
+
+        &__navbar {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            transform: translateX(-25px);
+        }
+
+        &__links {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Space Mono';
+            color: #939CAA;
+            transition: 40ms ease;
+
+            &:hover {
+                transition: 40ms ease;
+                color: #FCB72B;
+            }
+        }
+
+        &__link {
+            display: none;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 10px 40px;
+            background: #FCB72B;
+            transition: 40ms ease;
+            border: 2px solid #FCB72B;
+
+            &:active {
+                transition: 40ms ease;
+                background: #FFFFFF;
+                color: #FCB72B;
+                border: 2px solid #FCB72B;
+            }
+        }
+    }
+}
